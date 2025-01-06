@@ -40,10 +40,17 @@ public:
         espalexa.loop();
     }
 
-    void setState(bool state, uint8_t bright = 255) {
+    void setState(bool state) {
         deviceState = state;
-        brightness = bright;
+        //brightness = bright;
         ledManager->setState(state);
+        //ledManager->setBrightness(bright);
+    }
+
+    void setBrightness(uint8_t bright = 255) {
+        //deviceState = state;
+        brightness = bright;
+        //ledManager->setState(state);
         ledManager->setBrightness(bright);
     }
 

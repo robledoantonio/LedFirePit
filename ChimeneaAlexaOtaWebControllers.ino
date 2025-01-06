@@ -4,6 +4,7 @@
 #include "led_manager.h"
 #include "web_manager.h"
 
+
 OTAManager otaManager;
 LedManager ledManager;
 AlexaManager alexaManager(&ledManager);
@@ -28,7 +29,7 @@ void setup() {
     webManager.begin();
     alexaManager.begin();
     
-    ledManager.setEffect(RAINBOW);
+    ledManager.setEffect(FIRE);
 }
 
 void loop() {

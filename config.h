@@ -20,7 +20,7 @@ const int LED_PIN = 2;           // Pin de datos para WS2812B
 //const int LED_HEIGHT = 16;        // Alto de la matriz
 //const int NUM_LEDS = LED_WIDTH * LED_HEIGHT;  // Total de LEDs
 const int NUM_LEDS = 702;
-const int MAX_BRIGHTNESS = 255;   // Brillo máximo
+const int MAX_BRIGHTNESS = 200;   // Brillo máximo
 
 // Intervalos de tiempo (en millisegundos)
 const long WIFI_CHECK_INTERVAL = 30000;     // Intervalo para verificar WiFi (30 segundos)
@@ -52,6 +52,8 @@ enum LedEffect {
     BREATHING,
     RAINBOW,
     FIRE,
+    LIFE,
+    CLOCK,    // Nuevo efecto
     OFF
 };
 
